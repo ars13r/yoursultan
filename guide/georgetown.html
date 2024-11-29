@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georgetown, Washington, D.C. & Profile Viewer</title>
+     <style>
+        * {
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0; /* Remove default body margin */
+            padding: 0;
+            color: #333;
+            display: flex;
+            height: 100vh; /* Set height to full viewport height */
+        }
+        .left-column {
+            flex: 1; /* Allow left column to take available space */
+            padding: 20px; /* Padding for spacing */
+            overflow-y: auto; /* Enable scrolling if content overflows */
+			height: 100%;
+        }
+        .right-column {
+            flex: 0 0 300px; /* Fixed width for right column (adjust as needed) */
+            background-color: #f4f4f4;
+            padding: 20px; /* Padding for spacing */
+			overflow-y: auto;
+            height: 100%; /* Set height to fill the viewport */
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+		h3 {
+			color: #333
+			}
+        .section {
+            margin-top: 40px;
+        }
+        .profile { 
+            cursor: pointer; 
+            margin: 10px 0; /* Adjusted margin to reduce vertical space */
+            padding: 10px; 
+            border: 1px solid #ccc; 
+        }
+        .details { 
+            margin-top: 10px; 
+            display: none; /* Initially hidden */
+        }
+        img {
+            max-width: 100%; /* Make images responsive */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Centering */
+            margin: 0 auto; /* Center the image */
+        }
+  .button-block {
+    display: block; /* Make buttons block elements */
+    margin-bottom: 10px; /* Add space between buttons */
+}
+
+  </style>
+</head>
+<body>
+
+<div class="left-column">
+    <h1>Georgetown, Washington, D.C.</h1>
+
+    <!-- Living in Georgetown Section -->
+    <div class="section">
+        <img src="https://i.postimg.cc/MGGBfPNq/Georgetown2.jpg" alt="Georgetown Image 1">
+        <h2>Life in Georgetown</h2>
+        <p>
+            Georgetown offers a unique blend of historic charm and modern convenience, making it one of the most desirable neighborhoods in Washington, D.C. Known for its cobblestone streets, 18th-century architecture, and picturesque waterfront, it’s a neighborhood with character, elegance, and a vibrant community. Living here means easy access to boutique shopping, trendy restaurants, cozy cafes, and high-end stores along M Street and Wisconsin Avenue. It's a lively area, perfect for those who enjoy a walkable, scenic, and sociable environment while still having moments of quiet charm by the Potomac River.
+        </p>
+    </div>
+    <!-- Other Social Highlights Section -->
+    <div class="section">
+        <img src="https://i.postimg.cc/2SGv6RH0/georgetown5.jpg" alt="Georgetown Image 2">
+        <h2>Reasons to live here</h2>
+        <ul>
+            <li><strong>Georgetown Waterfront Park</strong> - A perfect spot for outdoor activities, picnics, and social gatherings with scenic views of the Potomac.</li>
+            <li><strong>Shopping</strong> - High-end boutiques, local art galleries, and iconic stores such as Georgetown Park and Cady’s Alley.</li>
+            <li><strong>Historic Tours</strong> - Walking tours offer insights into Georgetown's architecture and storied past, including visits to iconic homes like Tudor Place.</li>
+            <li><strong>Georgetown University</strong> - A key part of the neighborhood’s identity, the university brings a youthful energy, with student events and cultural activities open to the public.</li>
+        </ul>
+    </div>
+    <!-- Popular Annual Events Section -->
+    <div class="section">
+        <img src="https://i.postimg.cc/hPFVZ0z1/Georgetown3.jpg" alt="Georgetown Image 3">
+        <h2>Events of the Year</h2>
+        <ul>
+            <li><strong>Georgetown French Market</strong> - Held in the spring, this event transforms Book Hill into a Parisian-style open-air market with deals, pastries, and live entertainment.</li>
+            <li><strong>Taste of Georgetown</strong> - A fall food festival where visitors can sample the best of Georgetown’s culinary scene.</li>
+            <li><strong>Georgetown GLOW</strong> - A winter light art exhibition that features stunning illuminated art installations throughout the neighborhood.</li>
+            <li><strong>Outdoor Movie Nights at Georgetown Waterfront Park</strong> - Summer screenings by the waterfront bring the community together for classic films under the stars.</li>
+            <li><strong>Lighting of the Christmas Tree</strong> - A holiday tradition where residents gather to kick off the festive season with music and lights.</li>
+        </ul>
+    </div>
+
+    <!-- Top Restaurants and Bars Section -->
+    <div class="section">
+        <img src="https://i.postimg.cc/43F96vRt/georgetown4.jpg" alt="Georgetown Image 4">
+        <h2>Where to Eat and Drink</h2>
+        <ul>
+            <li><strong>Filomena Ristorante</strong> - Classic Italian with famous pasta dishes and cozy ambiance.</li>
+            <li><strong>Chez Billy Sud</strong> - A charming French bistro with a great wine list and outdoor patio.</li>
+            <li><strong>Fiola Mare</strong> - Known for upscale seafood and stunning views of the waterfront.</li>
+            <li><strong>Martin’s Tavern</strong> - A historic bar where politicians and presidents, including JFK, once dined.</li>
+            <li><strong>The Sovereign</strong> - A Belgian-inspired gastropub with a vast selection of rare beers and a creative menu.</li>
+        </ul>
+    </div>
+	    <!-- Where to Live Section -->
+    <div class="section">
+       <img src="https://i.postimg.cc/dQZ89f10/Georgetown1.jpg" style="width:100%; height:auto;">
+        <h2>Where to Live</h2>
+        <ul>
+            <li><strong>Waterfront</strong> - A lively, modern area with scenic views of the Potomac River, upscale condos, and bustling restaurants. It’s popular for its chic, urban energy and easy access to outdoor activities like kayaking and walking along the river.</li>
+            <li><strong>Off M Street NW</strong> - The heart of Georgetown's commercial district, blending historic charm with vibrant shopping and dining. It has a bustling, energetic vibe with a mix of boutiques, cafes, and nightlife.</li>
+            <li><strong>Dumbarton Oaks</strong> - Steeped in history and elegance, this area is anchored by the stunning Dumbarton Oaks gardens and museum. It exudes a refined, scholarly vibe with a strong connection to art, nature, and cultural heritage.</li>
+            <li><strong>Foxhall Village</strong> - A quiet, picturesque enclave with charming Tudor-style homes and tree-lined streets. It feels like a peaceful suburban retreat while still being close to the city's action.</li>
+            <li><strong>Berkely</strong> - An upscale, residential area known for its spacious homes and serene, green surroundings. It’s family-friendly and feels more like a tranquil escape from the busier parts of Georgetown.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="right-column">
+    <h1>Consultants in Georgetown</h1>
+    <div class="filter-container">
+        <label for="traitFilter">Filter by Trait:</label>
+        <select id="traitFilter">
+            <option value="all">All</option>
+            <option value="Frequent traveler">Frequent traveler</option>
+            <option value="Artist">Artist</option>
+            <option value="Event Expert">Event Expert</option>
+            <option value="Dog Parent">Dog Parent</option>
+            <option value="Book lover">Book lover</option>
+            <option value="Yogi">Yogi</option>
+            <option value="Volunteer">Volunteer</option>
+            <option value="Night Owl">Night Owl</option>
+            <option value="Parent">Parent</option>
+            <option value="Sports fan">Sports fan</option>
+            <option value="Gardener">Gardener</option>
+            <option value="Remote worker">Remote worker</option>
+            <option value="Retiree">Retiree</option>
+            <option value="Student">Student</option>
+            <option value="LGBTQ+">LGBTQ+</option>
+            <option value="Shopaholic">Shopaholic</option>
+            <option value="Young professional">Young professional</option>
+            <option value="Photographer">Photographer</option>
+            <option value="Gym Lover">Gym Lover</option>
+            <option value="Veteran">Veteran</option>
+            <option value="Freelancer">Freelancer</option>
+            <option value="Camper">Camper</option>
+            <option value="Café Fiend">Café Fiend</option>
+            <option value="Swimmer">Swimmer</option>
+            <option value="Sports Bar MVP">Sports Bar MVP</option>
+        </select>
+    </div>
+    <div id="profiles"></div>
+</div>
+
+<script>
+    const profiles = [
+        { id: 1, name: "Anthony", neighborhood: "Georgetown", Trait1: "Frequent traveler", Trait2: "Artist", Trait3: "Business owner", Image: "https://i.postimg.cc/qBD8cT0S/Anthony.png" },
+        { id: 2, name: "Bee", neighborhood: "Georgetown", Trait1: "Event Expert", Trait2: "Dog Parent", Trait3: "Business owner", Image: "https://i.postimg.cc/1XXDxW0v/Bee.png" },
+        { id: 3, name: "Bruce", neighborhood: "Georgetown", Trait1: "Book lover", Trait2: "Gardener", Trait3: "Commuter", Image: "https://i.postimg.cc/yYJ0vb8d/Bruce.png" },
+        { id: 4, name: "Bryce", neighborhood: "Georgetown", Trait1: "Yogi", Trait2: "Frequent traveler", Trait3: "Night Owl", Image: "https://i.postimg.cc/fyPmMxBD/Bryce.png" },
+        { id: 5, name: "Carla", neighborhood: "Georgetown", Trait1: "Frequent traveler", Trait2: "Yogi", Trait3: "Volunteer", Image: "https://i.postimg.cc/DwLLK4s3/Carla.png" },
+        { id: 6, name: "Carlton", neighborhood: "Georgetown", Trait1: "Night Owl", Trait2: "Person with a disability", Trait3: "Freelancer", Image: "https://i.postimg.cc/1zS6RRcn/Carlton.png" },
+        { id: 7, name: "Chris", neighborhood : "Georgetown", Trait1: "Parent", Trait2: "Sports fan", Trait3: "Frequent traveler", Image: "https://i.postimg.cc/268ZvHtC/Chris.png" },
+        { id: 8, name: "Christian", neighborhood: "Georgetown", Trait1: "Gardener", Trait2: "Gym Lover", Trait3: "Veteran", Image: "https://i.postimg.cc/7LNz5vmB/christian.png" },
+        { id: 9, name: "Clyde", neighborhood: "Georgetown", Trait1: "Dog Parent", Trait2: "Remote worker", Trait3: "Retiree", Image: "https://i.postimg.cc/26cBxQph/Clyde.png" },
+        { id: 10, name: "Fatima", neighborhood: "Georgetown", Trait1: "Student", Trait2: "LGBTQ+", Trait3: "Shopaholic", Image: "https://i.postimg.cc/156rydhd/fatima.png" },
+        { id: 11, name: "Gene", neighborhood: "Georgetown", Trait1: "Remote worker", Trait2: "Veteran", Trait3: "Young professional", Image: "https://i.postimg.cc/3wLgL5mk/Gene.png" },
+        { id: 12, name: "Jack", neighborhood: "Georgetown", Trait1: "Young professional", Trait2: "Shopaholic", Trait3: "Swimmer", Image: "https://i.postimg.cc/X7wdRy9S/Jack.png" },
+        { id: 13, name: "Jackson", neighborhood: "Georgetown", Trait1: "Veteran", Trait2: "Camper", Trait3: "Sports Bar MVP", Image: "https://i.postimg.cc/V6rbDSzh/jackson.png" },
+        { id: 14, name: "Janice", neighborhood: "Georgetown", Trait1: "Photographer", Trait2: "Shop aholic", Trait3: "Gym Lover", Image: "https://i.postimg.cc/SRcYbw27/Janice.png" },
+        { id: 15, name: "Jessica", neighborhood: "Georgetown", Trait1: "Young professional", Trait2: "Café Fiend", Trait3: "Runner", Image: "https://i.postimg.cc/ry4r4tn0/jessica.png" },
+    ];
+
+    function displayProfiles(filterTrait = "all") {
+        const profilesDiv = document.getElementById('profiles');
+        profilesDiv.innerHTML = ''; // Clear existing profiles
+        profiles.forEach(profile => {
+            if (filterTrait === "all" || 
+                profile.Trait1 === filterTrait || 
+                profile.Trait2 === filterTrait || 
+                profile.Trait3 === filterTrait) {
+                const profileDiv = document.createElement('div');
+                profileDiv.classList.add('profile');
+                profileDiv.setAttribute('data-id', profile.id);
+                profileDiv.innerHTML = `
+                    <div><strong>${profile.name}</strong></div>
+					<div> ${profile.Trait1}</div>
+					<div> ${profile.Trait2}</div>
+					<div> ${profile.Trait3}</div>
+                    <div class="details" id="details-${profile.id}"></div>
+                `;
+                profileDiv.addEventListener('click', function() {
+                    displayProfileDetails(profile);
+                });
+                profilesDiv.appendChild(profileDiv);
+            }
+        });
+    }
+
+    function displayProfileDetails(profile) {
+        const detailsDiv = document.getElementById(`details-${profile.id}`);
+        if (detailsDiv.style.display === "none" || detailsDiv.style.display === "") {
+            detailsDiv.innerHTML = `
+                <h3>${profile.name}</h3>
+                <img src="${profile.Image}" alt="${profile.name}">
+                <button class="button-block" onclick="goToQuestionPage('${profile.name}')">Ask ${profile.name} a question</button>
+                <button class="button-block" onclick="scheduleConsultation('${profile.name}')">Schedule a phone consultation with ${profile.name}</button>
+            `;
+            detailsDiv.style.display = "block"; // Show the details
+        } else {
+            detailsDiv.style.display = "none"; // Hide the details if clicked again
+        }
+    }
+
+    function goToQuestionPage(name) {
+        window.location.href = `question.html?name=${encodeURIComponent(name)}`;
+    }
+
+    function scheduleConsultation(name) {
+        window.location.href = `appointment.html?name=${encodeURIComponent(name)}`;
+    }
+
+    document.getElementById('traitFilter').addEventListener('change', function() {
+        const selectedTrait = this.value;
+        displayProfiles(selectedTrait);
+    });
+
+    // Display profiles when the page loads
+    displayProfiles();
+</script>
+
+</body>
+</html>
